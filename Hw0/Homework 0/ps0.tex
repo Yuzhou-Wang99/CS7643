@@ -1,0 +1,110 @@
+\documentclass[11pt,english, answers]{exam}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \listfiles
+
+\usepackage{fullpage}
+\usepackage[showframe=false,margin=1in]{geometry}
+\parindent=0pt
+\usepackage{relsize}
+\usepackage[T1]{fontenc} % for properly hyphenating words with accented chars
+\usepackage[latin1]{inputenc}
+\usepackage{babel}
+
+% figure management
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[belowskip=0pt,aboveskip=0pt,font=small]{caption}
+\setlength{\intextsep}{7pt plus 0pt minus 0pt}
+\usepackage{tikz}
+
+% math
+\usepackage{amsmath, amsthm, amssymb}
+
+%\usepackage{amstext}
+\usepackage{textcomp}
+\usepackage{stmaryrd}
+\usepackage{upgreek}
+\usepackage{bm}
+\usepackage{cases}
+
+% code
+\usepackage{listings}
+
+% assorted
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{xspace}
+\usepackage{comment}
+\usepackage{color}
+\usepackage{afterpage}
+\usepackage[normalem]{ulem}
+\usepackage{enumitem}
+\usepackage{xparse}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shortcuts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{assets/mysymbols}
+\input{assets/math_definition.tex}
+% \newcommand{\hide}[1]{}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\wb}{\mathbf{w}}
+\lstset{language=C,keywordstyle={\bfseries \color{blue}}}
+\NewDocumentCommand{\codeword}{v}{%
+	\texttt{\textcolor{blue}{#1}}%
+}
+
+\checkedchar{\tikz\draw[black,fill=black] (0,0) circle (1.0ex);}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title / Author
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{CS 4644/7643: Deep Learning\\
+Summer 2025 \\
+Problem Set 0}
+\input{assets/instructor-and-TAs}
+\date{Due: Sunday, May 18, 11:59pm ET. There is no grace period for this assignment. }
+
+\maketitle
+
+\paragraph*{Instructions}
+\begin{enumerate}
+ \item We will be using Gradescope to collect your assignments.  Please read the following instructions for submitting to Gradescope carefully! Failure to follow these instructions may result in parts of your assignment not being graded. We will not entertain regrading requests for failure to follow instructions.
+      \begin{itemize}
+        \item
+         It is mandatory to use the {\LaTeX} template provided.
+           For every question, there is only one correct answer. To mark the correct answer, change \codeword{\choice} to \codeword{\CorrectChoice}
+        \item
+        Remember to tag each question on GradeScope to the correct PDF page. \textbf{Failure to do so will result in penalty in future homeworks}.
+      \end{itemize}
+
+ \item Hard copies are \textbf{not} accepted.
+\item We generally encourage you to collaborate with other students. You may talk to a friend,
+discuss the questions and potential directions for solving them. However, you need to write
+your own solutions and code separately, and \emph{not} as a group activity.
+Please list the students you collaborated with. \\
+\textbf{Exception: PS0 is meant to serve as a background preparation test. You must NOT collaborate on PS0.}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Body
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\input{mcq}
+% \input{CS7643-Problem-Sets/question-bank/PS0/proofs}
+%input{prob}
+%\input{calculus}
+%\input{softmax}
+
+\end{document}

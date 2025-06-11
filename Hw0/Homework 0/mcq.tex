@@ -1,0 +1,217 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}[start]
+
+\item (1 point) Consider the tables below that display infection rates for a disease in two independent regions given vaccine status.
+%
+\\\\
+\begin{tabular}{ |c|c|c|c| } 
+	\hline
+	Region & Pop. & Vaccination Rates & \% of Population Infected \\
+	\hline
+	Cityville & 874,961 & 77.0\% & 0.36\% \\ 
+	\hline
+	Townsland & 578,759 & 37.7\% &  1\%\\ 
+	\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\begin{tabular}{ |c|c|c| } 
+	\hline
+	Region & \% of Infected people that are Vaccinated & \% of Infected people that are Unvaccinated\\
+	\hline
+	Cityville & 27.8\% & 72.2\%  \\ 
+	\hline
+	Townsland & 5.0\% & 95.0\%\\ 
+	\hline
+\end{tabular}
+
+It appears that infected individuals in Cityville are much more likely to be vaccinated than in Townsland. Given these tables, would a vaccinated individual be less likely to be infected in Cityville or Townsland?
+
+
+\begin{oneparcheckboxes}
+\choice Cityville
+\choice Townsland
+\end{oneparcheckboxes}
+
+
+
+
+\item (1 point)
+
+Given a (possibly) biased coin with $P(Heads) = p$ and $P(Tails) = 1 - p$, first determine the method to generate a fair outcome (50:50) in the fewest amount of flips using this coin.
+\\\\
+What is the expected number of coin flips required (in terms of $p$) to produce a fair outcome using this method?
+
+\vspace{0.5cm}
+
+\begin{oneparcheckboxes}
+\choice $\frac{1}{p(1-p)}$
+\choice $\frac{1}{1 + p^2}$
+\choice $\frac{2p}{1 - p}$
+\choice A fair outcome cannot be generated with a biased coin
+\end{oneparcheckboxes}
+
+\vspace{0.5cm}
+
+\item (1 point)
+$X$ is a continuous random variable with probability density function:
+%
+\begin{align}
+p(x) = \left\{ {\begin{array}{*{20}{c}}
+{\begin{array}{*{20}{c}}
+{2x^3/81}&{0 \le x \le 3}
+\end{array}}\\
+{\begin{array}{*{20}{c}}
+{2(x-3)/8}&{3\le x \le 5}
+\end{array}}
+\end{array}} \right.
+\end{align}
+%
+Which of the following statements are true about the equation for the corresponding cumulative density function (CDF) $C(x)$?\\
+{[\emph{Hint:} Recall that CDF is defined as $C(x) = Pr(X \le x)$.]}\\
+\begin{checkboxes}
+	\choice $C(x) = x^4/162$  for   $0 \le x \le 3 $
+	\choice $C(x) = x^2/8 -3x/4 + 13/8$ for  $3 \le x \le 5$
+	\choice All of the above
+	\choice None of the above
+\end{checkboxes}
+
+\item (2 point) A random variable $x$ in standard normal distribution 
+has the following probability density:
+%
+\begin{align}
+p(x) = \frac{1}{{\sqrt {2\pi } }}{e^{ - \frac{{{x^2}}}{2}}}
+\end{align}
+%
+Evaluate the following integral:
+%
+\begin{align}
+\int\limits_{ - \infty }^\infty  {p(x)(a{x^2} + b{x} - c)dx}
+\end{align}
+
+[\emph{Hint:} We are not sadistic (okay, we're a little sadistic, but not for this question). This is not a calculus question.]\\
+
+\begin{oneparcheckboxes}
+	\choice a + b + c
+	\choice - c
+	\choice a - c
+	\choice b + c
+\end{oneparcheckboxes}
+
+\vspace{2cm}
+
+	\item
+	(2 points)
+	Consider the following function of $\vec{x} = (x_1, x_2, x_3, x_4, x_5, x_6)$:
+	\beqn
+	f(\vec{x}) = \sigma\left( \log\left( 5 \left(
+	\max\{x_1, x_2\} \cdot \frac{x_3}{x_4} - (x_5 + x_6) \right)
+	\right) + \frac{1}{2} \right)
+	\eeqn
+	where $\sigma$ is the sigmoid function
+	\beqn
+	\sigma(x) = \frac{1}{1 + e^{-x}}
+	\eeqn
+	
+	Compute the gradient $\nabla_{\vec{x}} f(\cdot)$ and evaluate it at at $\hat{\vec{x}} = (-1, 3, 4, 5, -5, 7)$.
+	
+\begin{oneparcheckboxes}
+	\choice 
+	$\begin{bmatrix}
+		0 \\
+		0.031 \\
+		0.026 \\
+		-0.013 \\
+		-0.062 \\
+		-0.062 \\
+	\end{bmatrix}$
+ \choice $\begin{bmatrix}
+	0 \\
+	0.157 \\
+	0.131 \\
+	-0.065 \\
+	-0.314 \\
+	-0.314 \\
+	\end{bmatrix}$
+	\choice $\begin{bmatrix}
+	0 \\
+	0.357 \\
+	0.268 \\
+	-0.214 \\
+	-0.894 \\
+	-0.894 \\
+	\end{bmatrix}$
+	\choice $\begin{bmatrix}
+	0 \\
+	0.357 \\
+	0.268 \\
+	-0.214 \\
+	-0.447 \\
+	-0.447 \\
+	\end{bmatrix}$
+\end{oneparcheckboxes}
+
+\item (2 points) Which of the following functions are convex?
+\begin{checkboxes}
+\choice $\|\x\|_{\frac{1}{2}}$ 
+\choice $\min_{i=1}^k \vec{a}_{i}^T \x$ for $\x \in \mathbb{R}^n$, and a finite set of arbitrary vectors: $\{\vec{a}_1, \dots, \vec{a}_k\}$
+\choice $\log{(1+\exp(\wb^T \x))} $ for $\wb \in \mathbb{R}^d$
+\choice All of the above
+\end{checkboxes}
+
+
+\item (2 points) Suppose you want to predict an unknown value $Y \in \RF$, but you are only given
+a sequence of noisy observations $x_1, \dots, x_n$ of $Y$ with i.i.d.\ noise ($x_i = Y + \epsilon_i $). If we assume the noise is I.I.D.\ Gaussian ($\epsilon_i \sim N(0, \sigma^2)$), the maximum likelihood
+estimate ($\hat y$) for $Y$ can be given by: 
+
+
+\begin{checkboxes}
+	\choice A: $ \hat y = \argmin_y \sum_{i=1}^{n} (y - x_i)^2 $ 
+	\choice B: $ \hat y = \argmin_y \sum_{i=1}^{n} |y - x_i| $
+	\choice C: $\hat y = \frac{1}{n} \sum_{i=1}^{n} x_i $
+	\choice Both A \&  C
+	\choice Both B \& C
+	
+\end{checkboxes}
+
+
+
+\item (1 point) What is the result of 
+$\lim_{x \to 0} \frac{\sin(3x)}{e^x - 1}$?
+
+\begin{oneparcheckboxes}
+\choice 3
+\choice 1
+\choice 0
+\choice Undefined
+\end{oneparcheckboxes}
+\item (1 point) Given the function $f(x, y, z) = xy^2z^3$, what is $\frac{\partial^2f}{\partial y\partial z}$?
+
+\begin{oneparcheckboxes}
+\choice $2xyz^3$
+\choice $6xy^2z^2$
+\choice $6xyz^2$
+\choice $2xz^3$
+\end{oneparcheckboxes}
+
+%\item (1 point) Let $f(x, y) = x^2y + xy^2$. Calculate the directional derivative of $f$ at the point $(1, 1)$ in the direction of $\mathbf{v} = \langle 1, 2 \rangle$. Recall that the directional derivative is given by $\nabla f \cdot (\mathbf{v} / |\mathbf{v}|)$, where $\nabla f$ is the gradient and $|\mathbf{v}|$ is the magnitude of $\mathbf{v}$.
+
+%\begin{oneparcheckboxes}
+%\choice $5\sqrt{5}$
+%\choice $3\sqrt{5}$
+%\choice $4\sqrt{5}$
+%\choice $2\sqrt{5}$
+%\end{oneparcheckboxes}
+
+
+
+
+\end{enumerate}
+
+
+
+
+\pagebreak
